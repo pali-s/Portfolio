@@ -85,7 +85,7 @@ const About: React.FC = () => {
           {/* Text Content */}
           <div className={`space-y-8 transition-all duration-1000 delay-500 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'
             }`}>
-            <div className="text-lg md:text-xl text-gray-300 leading-relaxed space-y-6">
+            <div className="text-lg md:text-xl text-gray-300 leading-relaxed space-y-6 text-justify">
               <p>
                 I'm not JUST a web developer. I'm a <span className="font-bold text-pink-400">digital craftsman</span> who loves turning ideas into experiences. I believe that every line of code should do something meaninful, every pixel should feel intentional, and if a user interaction sparks a little joy? That's the sweet spot.
               </p>
