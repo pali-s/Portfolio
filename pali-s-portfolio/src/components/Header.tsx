@@ -45,7 +45,7 @@ const Header: React.FC = () => {
       />
       
       <header className={`fixed top-0 w-full z-40 transition-all duration-500 ${
-        isScrolled 
+        isScrolled||isMobileMenuOpen 
           ? 'bg-black/80 backdrop-blur-xl border-b border-pink-500/30' 
           : 'bg-transparent'
       }`}>
