@@ -7,7 +7,7 @@ const Hero: React.FC = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   
-  const texts = ['FULL-STACK DEVELOPER', 'CREATIVE CODER', 'DIGITAL ARCHITECT', 'PROBLEM SOLVER'];
+  const texts = ['FULL-STACK WEB DEVELOPER', 'CREATIVE CODER', 'PROBLEM SOLVER'];
   
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
