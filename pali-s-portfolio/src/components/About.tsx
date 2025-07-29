@@ -54,12 +54,12 @@ const About: React.FC = () => {
     // }
   ];
 
-  const stats = [
-    { number: "50+", label: "Projects Shipped", icon: <Zap className="text-pink-400" size={20} /> },
-    { number: "3+", label: "Years Crafting", icon: <Target className="text-magenta-400" size={20} /> },
-    { number: "∞", label: "Lines of Code", icon: <Code className="text-pink-400" size={20} /> },
-    { number: "100%", label: "Passion Level", icon: <Heart className="text-magenta-400" size={20} fill="currentColor" /> }
-  ];
+  // const stats = [
+  //   { number: "50+", label: "Projects Shipped", icon: <Zap className="text-pink-400" size={20} /> },
+  //   { number: "3+", label: "Years Crafting", icon: <Target className="text-magenta-400" size={20} /> },
+  //   { number: "∞", label: "Lines of Code", icon: <Code className="text-pink-400" size={20} /> },
+  //   { number: "100%", label: "Passion Level", icon: <Heart className="text-magenta-400" size={20} fill="currentColor" /> }
+  // ];
 
   return (
     <section id="about" ref={sectionRef} className="py-20 bg-gradient-to-br from-black via-gray-900 to-black relative overflow-hidden">

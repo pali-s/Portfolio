@@ -98,7 +98,7 @@ const Hero: React.FC = () => {
             <div className="text-green-400 text-sm">
               <span className="text-pink-400">$</span> whoami
               <br />
-              <span className="text-white">creative_developer</span>
+              <span className="text-white">work in progress</span>
               <br />
               <span className="text-pink-400">$</span> status
               <br />

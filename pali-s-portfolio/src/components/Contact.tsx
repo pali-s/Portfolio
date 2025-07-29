@@ -54,17 +54,17 @@ const Contact: React.FC = () => {
     {
       icon: <Mail className="text-pink-400" size={24} />,
       title: "Email",
-      value: "hello@devspace.com",
+      value: "palishma.0812@gmail.com",
       href: "mailto:hello@devspace.com",
       description: "Drop me a line anytime"
     },
-    {
-      icon: <Phone className="text-magenta-400" size={24} />,
-      title: "Phone",
-      value: "+1 (555) 123-CODE",
-      href: "tel:+15551232633",
-      description: "Let's talk it through"
-    },
+    // {
+    //   icon: <Phone className="text-magenta-400" size={24} />,
+    //   title: "Phone",
+    //   value: "+1 (555) 123-CODE",
+    //   href: "tel:+15551232633",
+    //   description: "Let's talk it through"
+    // },
     {
       icon: <MapPin className="text-pink-400" size={24} />,
       title: "Location",
