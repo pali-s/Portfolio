@@ -39,7 +39,7 @@ const Projects: React.FC = () => {
       subtitle: "Centralized Scholarship Search and Post Engine for Students and Institutions Developed with MERN Stack",
       description: "Main Features: Search and apply to scholarships by universities, type, and location. Post scholarship opportunities for institutions.",
       image: "./images/card4.png",
-      tech: ["MongoDB", "Express.js", "React", "Node.js","Tailwind CSS"],
+      tech: ["MongoDB", "Express.js", "React", "Node.js", "Tailwind CSS"],
       featured: true,
       status: "Beta",
       // metrics: { queries: "1M+", speed: "< 100ms", accuracy: "99.7%" }
@@ -51,16 +51,18 @@ const Projects: React.FC = () => {
       image: "./images/card.png",
       tech: ["React.js", "Tailwind CSS"],
       featured: false,
-      status: "Live"
+      status: "Live",
+      glink:"https://github.com/pali-s/fishing-game.git",
     },
     {
       title: "Girl Math",
       subtitle: "Budgeting App for the Girlies Developed with React Native",
       description: "Key Features: Track expenses, set budgets, and manage finances with a user-friendly interface designed for the girlies.",
       image: "./images/card3.png",
-      tech: ["React Native", "TypeScript", "Node.js","mongoDB"],
+      tech: ["React Native", "TypeScript", "Node.js", "mongoDB"],
       featured: false,
-      status: "Development"
+      status: "Development",
+      glink: "https://github.com/pali-s/expense-tracker-app.git"
     },
     // {
     //   title: "BlockVote",
@@ -102,62 +104,56 @@ const Projects: React.FC = () => {
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
-          <h2 className={`text-6xl md:text-7xl font-black mb-6 transition-all duration-1000 ${
-            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-          }`}>
+          <h2 className={`text-6xl md:text-7xl font-black mb-6 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+            }`}>
             <span className="bg-gradient-to-r from-pink-400 via-magenta-500 to-pink-600 bg-clip-text text-transparent">
               MY PROJECTS
             </span>
           </h2>
-          <div className={`w-32 h-1 bg-gradient-to-r from-pink-500 to-magenta-500 mx-auto rounded-full transition-all duration-1000 delay-300 ${
-            isVisible ? 'opacity-100 scale-x-100' : 'opacity-0 scale-x-0'
-          }`} />
-          <p className={`text-xl text-gray-300 max-w-3xl mx-auto mt-8 transition-all duration-1000 delay-500 ${
-            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'
-          }`}>
+          <div className={`w-32 h-1 bg-gradient-to-r from-pink-500 to-magenta-500 mx-auto rounded-full transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 scale-x-100' : 'opacity-0 scale-x-0'
+            }`} />
+          <p className={`text-xl text-gray-300 max-w-3xl mx-auto mt-8 transition-all duration-1000 delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'
+            }`}>
             Welcome to my creative space!
           </p>
         </div>
 
         {/* Featured Projects */}
         <div className="mb-20">
-          <h3 className={`text-3xl font-bold text-white mb-12 text-center flex items-center justify-center gap-3 transition-all duration-1000 delay-700 ${
-            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'
-          }`}>
+          <h3 className={`text-3xl font-bold text-white mb-12 text-center flex items-center justify-center gap-3 transition-all duration-1000 delay-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'
+            }`}>
             <Star className="text-pink-400" size={28} fill="currentColor" />
             FEATURED WORK
             <Star className="text-magenta-400" size={28} fill="currentColor" />
           </h3>
-          
+
           <div className="grid lg:grid-cols-2 gap-12">
             {projects.filter(project => project.featured).map((project, index) => (
-              <div 
+              <div
                 key={index}
-                className={`group relative bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm rounded-3xl overflow-hidden border border-pink-500/30 hover:border-pink-400/50 transform hover:scale-[1.02] transition-all duration-500 ${
-                  isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-                }`}
+                className={`group relative bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm rounded-3xl overflow-hidden border border-pink-500/30 hover:border-pink-400/50 transform hover:scale-[1.02] transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+                  }`}
                 style={{ transitionDelay: `${800 + index * 200}ms` }}
                 onMouseEnter={() => setActiveProject(index)}
                 onMouseLeave={() => setActiveProject(null)}
               >
                 {/* Image Container */}
                 <div className="relative overflow-hidden h-64">
-                  <img 
-                    src={project.image} 
+                  <img
+                    src={project.image}
                     alt={project.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
-                  
+
                   {/* Status Badge */}
                   <div className={`absolute top-4 left-4 px-3 py-1 rounded-full text-xs font-bold border ${getStatusColor(project.status)}`}>
                     {project.status}
                   </div>
-                  
+
                   {/* Action Buttons */}
-                  <div className={`absolute top-4 right-4 flex space-x-2 transition-all duration-300 ${
-                    activeProject === index ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2'
-                  }`}>
+                  <div className={`absolute top-4 right-4 flex space-x-2 transition-all duration-300 ${activeProject === index ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2'
+                    }`}>
                     <button className="bg-white/10 backdrop-blur-sm p-2 rounded-full hover:bg-pink-500/20 transition-colors duration-200 border border-white/20">
                       <Play size={16} className="text-white" />
                     </button>
@@ -171,9 +167,8 @@ const Projects: React.FC = () => {
 
                   {/* Metrics Overlay */}
                   {project.metrics && (
-                    <div className={`absolute bottom-4 left-4 right-4 transition-all duration-300 ${
-                      activeProject === index ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2'
-                    }`}>
+                    <div className={`absolute bottom-4 left-4 right-4 transition-all duration-300 ${activeProject === index ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2'
+                      }`}>
                       <div className="flex justify-between text-xs">
                         {Object.entries(project.metrics).map(([key, value]) => (
                           <div key={key} className="bg-black/50 backdrop-blur-sm px-2 py-1 rounded border border-pink-500/30">
@@ -185,7 +180,7 @@ const Projects: React.FC = () => {
                     </div>
                   )}
                 </div>
-                
+
                 {/* Content */}
                 <div className="p-8">
                   <div className="mb-4">
@@ -196,15 +191,15 @@ const Projects: React.FC = () => {
                       {project.subtitle}
                     </p>
                   </div>
-                  
+
                   <p className="text-gray-300 mb-6 leading-relaxed">
                     {project.description}
                   </p>
-                  
+
                   {/* Tech Stack */}
                   <div className="flex flex-wrap gap-2 mb-6">
                     {project.tech.map((tech, techIndex) => (
-                      <span 
+                      <span
                         key={techIndex}
                         className="bg-gradient-to-r from-pink-500/20 to-magenta-500/20 text-pink-300 px-3 py-1 rounded-full text-sm font-medium border border-pink-500/30"
                       >
@@ -212,7 +207,7 @@ const Projects: React.FC = () => {
                       </span>
                     ))}
                   </div>
-                  
+
                   <button className="flex items-center gap-2 text-pink-400 font-semibold hover:text-magenta-400 transition-colors duration-200 group/btn">
                     <Code2 size={16} />
                     Explore Project
@@ -229,35 +224,33 @@ const Projects: React.FC = () => {
 
         {/* Other Projects Grid */}
         <div>
-          <h3 className={`text-3xl font-bold text-white mb-12 text-center flex items-center justify-center gap-3 transition-all duration-1000 delay-1000 ${
-            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'
-          }`}>
+          <h3 className={`text-3xl font-bold text-white mb-12 text-center flex items-center justify-center gap-3 transition-all duration-1000 delay-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'
+            }`}>
             <Zap className="text-magenta-400" size={24} />
             HONORABLE MENTIONS
           </h3>
-          
+
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.filter(project => !project.featured).map((project, index) => (
-              <div 
+              <div
                 key={index}
-                className={`group bg-gradient-to-br from-gray-800/30 to-gray-900/30 backdrop-blur-sm rounded-2xl overflow-hidden border border-pink-500/20 hover:border-pink-400/40 transform hover:scale-105 transition-all duration-300 ${
-                  isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-                }`}
+                className={`group bg-gradient-to-br from-gray-800/30 to-gray-900/30 backdrop-blur-sm rounded-2xl overflow-hidden border border-pink-500/20 hover:border-pink-400/40 transform hover:scale-105 transition-all duration-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+                  }`}
                 style={{ transitionDelay: `${1200 + index * 100}ms` }}
               >
                 <div className="relative overflow-hidden h-48">
-                  <img 
-                    src={project.image} 
+                  <img
+                    src={project.image}
                     alt={project.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                  
+
                   <div className={`absolute top-3 left-3 px-2 py-1 rounded-full text-xs font-bold border ${getStatusColor(project.status)}`}>
                     {project.status}
                   </div>
                 </div>
-                
+
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-white mb-2 group-hover:text-pink-300 transition-colors duration-200">
                     {project.title}
@@ -268,10 +261,10 @@ const Projects: React.FC = () => {
                   <p className="text-gray-400 text-sm mb-4 leading-relaxed line-clamp-3">
                     {project.description}
                   </p>
-                  
+
                   <div className="flex flex-wrap gap-1 mb-4">
                     {project.tech.slice(0, 3).map((tech, techIndex) => (
-                      <span 
+                      <span
                         key={techIndex}
                         className="bg-pink-500/10 text-pink-400 px-2 py-1 rounded text-xs font-medium border border-pink-500/20"
                       >
@@ -284,14 +277,19 @@ const Projects: React.FC = () => {
                       </span>
                     )}
                   </div>
-                  
+
                   <div className="flex space-x-3">
                     <button className="flex-1 bg-gradient-to-r from-pink-500/20 to-magenta-500/20 text-pink-300 py-2 rounded-lg text-sm font-medium hover:from-pink-500/30 hover:to-magenta-500/30 transition-all duration-200 border border-pink-500/30">
                       View
                     </button>
-                    <button className="p-2 border border-pink-500/30 text-pink-400 rounded-lg hover:bg-pink-500/10 transition-colors duration-200">
+                    <a
+                      href= {project.glink || '#'}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-2 border border-pink-500/30 text-pink-400 rounded-lg hover:bg-pink-500/10 transition-colors duration-200 inline-flex items-center justify-center"
+                    >
                       <Github size={16} />
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>
