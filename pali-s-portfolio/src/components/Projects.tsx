@@ -25,61 +25,61 @@ const Projects: React.FC = () => {
 
   const projects = [
     {
-      title: "Neural Commerce",
-      subtitle: "AI-Powered E-Commerce Revolution",
-      description: "Next-gen e-commerce platform with AI-driven personalization, real-time inventory optimization, and predictive analytics. Features include dynamic pricing, smart recommendations, and automated customer service.",
-      image: "https://images.pexels.com/photos/4968659/pexels-photo-4968659.jpeg?auto=compress&cs=tinysrgb&w=1200",
-      tech: ["React", "Node.js", "TensorFlow", "PostgreSQL", "Redis", "Stripe"],
+      title: "Catfood Conquest",
+      subtitle: "Endless Runner Mobile Game Developed with Unity",
+      description: "Storyline: Earth has run out of cat resources so the Cat Corp. has sent you on a special mission to distant planets to collect cat food. Your goal is to collect as much cat food as possible while avoiding obstacles.",
+      image: "./images/card.png",
+      tech: ["C#", "Unity"],
       featured: true,
       status: "Live",
-      metrics: { users: "50K+", performance: "99.9%", conversion: "+40%" }
+      // metrics: { users: "50K+", performance: "99.9%", conversion: "+40%" }
     },
     {
-      title: "DataViz Pro",
-      subtitle: "Interactive Analytics Dashboard",
-      description: "Real-time data visualization platform with custom chart builders, collaborative features, and ML-powered insights. Handles millions of data points with sub-second query times.",
-      image: "https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg?auto=compress&cs=tinysrgb&w=1200",
-      tech: ["Vue.js", "D3.js", "Python", "FastAPI", "ClickHouse", "WebGL"],
+      title: "Grant Hive",
+      subtitle: "Centralized Scholarship Search and Post Engine for Students and Institutions Developed with MERN Stack",
+      description: "Main Features: Search and apply to scholarships by universities, type, and location. Post scholarship opportunities for institutions.",
+      image: "./images/card4.png",
+      tech: ["MongoDB", "Express.js", "React", "Node.js","Tailwind CSS"],
       featured: true,
       status: "Beta",
-      metrics: { queries: "1M+", speed: "< 100ms", accuracy: "99.7%" }
+      // metrics: { queries: "1M+", speed: "< 100ms", accuracy: "99.7%" }
     },
     {
-      title: "SocialSync",
-      subtitle: "Cross-Platform Social Hub",
-      description: "Unified social media management platform with advanced scheduling, analytics, and AI-powered content optimization across multiple platforms.",
-      image: "https://images.pexels.com/photos/267399/pexels-photo-267399.jpeg?auto=compress&cs=tinysrgb&w=800",
-      tech: ["React Native", "Firebase", "GraphQL", "Node.js"],
+      title: "Lucky Find: Fishing Game",
+      subtitle: "Luck-based fishing game Developed with React.js",
+      description: "hmm, you just pick a fish and hopefully it's a **LOOOOONG** one, whoever catches the longest fish wins! Loser gets roasted.",
+      image: "./images/card.png",
+      tech: ["React.js", "Tailwind CSS"],
+      featured: false,
+      status: "Live"
+    },
+    {
+      title: "Girl Math",
+      subtitle: "Budgeting App for the Girlies Developed with React Native",
+      description: "Key Features: Track expenses, set budgets, and manage finances with a user-friendly interface designed for the girlies.",
+      image: "./images/card3.png",
+      tech: ["React Native", "TypeScript", "Node.js","mongoDB"],
       featured: false,
       status: "Development"
     },
-    {
-      title: "CloudFlow",
-      subtitle: "DevOps Automation Suite",
-      description: "Complete CI/CD pipeline management with visual workflow builder, automated testing, and deployment orchestration.",
-      image: "https://images.pexels.com/photos/3184611/pexels-photo-3184611.jpeg?auto=compress&cs=tinysrgb&w=800",
-      tech: ["React", "Go", "Kubernetes", "Docker"],
-      featured: false,
-      status: "Live"
-    },
-    {
-      title: "BlockVote",
-      subtitle: "Decentralized Voting System",
-      description: "Secure, transparent voting platform built on blockchain technology with zero-knowledge proofs and quantum-resistant encryption.",
-      image: "https://images.pexels.com/photos/8728380/pexels-photo-8728380.jpeg?auto=compress&cs=tinysrgb&w=800",
-      tech: ["Solidity", "Web3.js", "IPFS", "React"],
-      featured: false,
-      status: "Research"
-    },
-    {
-      title: "PropTech AI",
-      subtitle: "Smart Real Estate Platform",
-      description: "AI-driven real estate marketplace with virtual tours, price prediction, and automated property matching using computer vision.",
-      image: "https://images.pexels.com/photos/280229/pexels-photo-280229.jpeg?auto=compress&cs=tinysrgb&w=800",
-      tech: ["Next.js", "Three.js", "Python", "OpenCV"],
-      featured: false,
-      status: "Live"
-    }
+    // {
+    //   title: "BlockVote",
+    //   subtitle: "Decentralized Voting System",
+    //   description: "Secure, transparent voting platform built on blockchain technology with zero-knowledge proofs and quantum-resistant encryption.",
+    //   image: "https://images.pexels.com/photos/8728380/pexels-photo-8728380.jpeg?auto=compress&cs=tinysrgb&w=800",
+    //   tech: ["Solidity", "Web3.js", "IPFS", "React"],
+    //   featured: false,
+    //   status: "Research"
+    // },
+    // {
+    //   title: "PropTech AI",
+    //   subtitle: "Smart Real Estate Platform",
+    //   description: "AI-driven real estate marketplace with virtual tours, price prediction, and automated property matching using computer vision.",
+    //   image: "https://images.pexels.com/photos/280229/pexels-photo-280229.jpeg?auto=compress&cs=tinysrgb&w=800",
+    //   tech: ["Next.js", "Three.js", "Python", "OpenCV"],
+    //   featured: false,
+    //   status: "Live"
+    // }
   ];
 
   const getStatusColor = (status: string) => {
@@ -115,7 +115,7 @@ const Projects: React.FC = () => {
           <p className={`text-xl text-gray-300 max-w-3xl mx-auto mt-8 transition-all duration-1000 delay-500 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'
           }`}>
-            Where innovation meets execution – each project pushes the boundaries of what's possible.
+            Welcome to my creative space!
           </p>
         </div>
 
@@ -233,7 +233,7 @@ const Projects: React.FC = () => {
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'
           }`}>
             <Zap className="text-magenta-400" size={24} />
-            MORE INNOVATIONS
+            HONORABLE MENTIONS
           </h3>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
