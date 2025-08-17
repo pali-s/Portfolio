@@ -119,7 +119,7 @@ const Hero: React.FC = () => {
           
           <div className="h-20 flex items-center justify-center">
             <h2 className="text-2xl md:text-4xl font-bold text-pink-400 font-mono">
-              {/* {currentText} */} What am i doing?
+              {currentText} 
               <span className="animate-pulse">|</span>
             </h2>
           </div>
