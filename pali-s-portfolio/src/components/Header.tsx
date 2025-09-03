@@ -74,10 +74,12 @@ const Header: React.FC = () => {
                   <div className="absolute inset-0 bg-pink-500/20 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300 -z-10" />
                 </button>
               ))}
+              <a href='./PalishmaShakya_CV_.pdf' download='PalishmaShakya_Resume.pdf'>
               <button className="bg-gradient-to-r from-pink-500 via-magenta-500 to-pink-600 text-white px-6 py-2 rounded-full hover:shadow-lg hover:shadow-pink-500/50 transform hover:scale-105 transition-all duration-300 flex items-center gap-2 font-semibold">
                 <Download size={16} />
                 RESUME
               </button>
+              </a>
             </div>
 
             {/* Mobile Menu Button */}
@@ -113,10 +115,12 @@ const Header: React.FC = () => {
                   {section}
                 </button>
               ))}
+              <a href='./PalishmaShakya_CV_.pdf' download='PalishmaShakya_Resume.pdf'>
               <button className="w-full bg-gradient-to-r from-pink-500 via-magenta-500 to-pink-600 text-white px-6 py-3 rounded-full hover:shadow-lg hover:shadow-pink-500/50 transform hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2 font-semibold mt-4">
                 <Download size={16} />
                 RESUME
               </button>
+              </a>
             </div>
           </div>
         </nav>
