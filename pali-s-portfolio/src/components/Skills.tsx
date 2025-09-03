@@ -35,8 +35,8 @@ const Skills: React.FC = () => {
   const skillCategories = [
     {
       icon: <Code2 className="text-pink-400" size={32} />,
-      title: "Frontend Mastery",
-      skills: ["React/Next.js", "TypeScript", "Vue.js", "Svelte", "WebGL", "Three.js"],
+      title: "Frontend Development",
+      skills: ["React", "Next.js","JavaScript", "Tailwind CSS","TypeScript"],
       level: 95,
       color: "from-pink-500 to-magenta-500",
       bgColor: "from-pink-500/10 to-magenta-500/10"
@@ -45,63 +45,56 @@ const Skills: React.FC = () => {
       icon: <Database className="text-magenta-400" size={32} />,
       title: "Backend Architecture",
       skills: ["Node.js", "Python", "Go", "PostgreSQL", "MongoDB", "GraphQL"],
-      level: 92,
+      level: 70,
       color: "from-magenta-500 to-purple-500",
       bgColor: "from-magenta-500/10 to-purple-500/10"
     },
     {
-      icon: <Brain className="text-pink-400" size={32} />,
-      title: "AI & Machine Learning",
-      skills: ["TensorFlow", "PyTorch", "OpenAI API", "Computer Vision", "NLP", "MLOps"],
-      level: 88,
-      color: "from-pink-500 to-red-500",
-      bgColor: "from-pink-500/10 to-red-500/10"
-    },
-    {
-      icon: <Cloud className="text-magenta-400" size={32} />,
-      title: "Cloud & DevOps",
-      skills: ["AWS", "Docker", "Kubernetes", "Terraform", "CI/CD", "Monitoring"],
-      level: 90,
-      color: "from-magenta-500 to-blue-500",
-      bgColor: "from-magenta-500/10 to-blue-500/10"
-    },
-    {
       icon: <Smartphone className="text-pink-400" size={32} />,
       title: "Mobile Development",
-      skills: ["React Native", "Flutter", "Swift", "Kotlin", "PWA", "Expo"],
-      level: 85,
+      skills: ["React Native", "Expo", "JavaScript", "TypeScript"],
+      level: 60,
       color: "from-pink-500 to-orange-500",
       bgColor: "from-pink-500/10 to-orange-500/10"
     },
     {
-      icon: <Shield className="text-magenta-400" size={32} />,
-      title: "Security & Blockchain",
-      skills: ["Web3", "Solidity", "Cryptography", "OAuth", "JWT", "Penetration Testing"],
-      level: 82,
-      color: "from-magenta-500 to-green-500",
-      bgColor: "from-magenta-500/10 to-green-500/10"
-    }
+      icon: <Brain className="text-pink-400" size={32} />,
+      title: "Learning & Exploration",
+      skills: ["TypeScript", "Next.js App Router", "Testing (Jest)", "Accessibility", "Performance"],
+      level: 50,
+      color: "from-blue-500 to-purple-500",
+      bgColor: "from-blue-500/10 to-purple-500/10"
+    },
+    // {
+    //   icon: <Cloud className="text-magenta-400" size={32} />,
+    //   title: "Cloud & DevOps",
+    //   skills: ["AWS", "Docker", "Kubernetes", "Terraform", "CI/CD", "Monitoring"],
+    //   level: 90,
+    //   color: "from-magenta-500 to-blue-500",
+    //   bgColor: "from-magenta-500/10 to-blue-500/10"
+    // },
   ];
 
   const tools = [
     { name: "VS Code", category: "Editor" },
     { name: "Figma", category: "Design" },
-    { name: "Docker", category: "DevOps" },
+    { name: "Trello", category: "Project Management" },
     { name: "Postman", category: "API" },
     { name: "Git", category: "Version Control" },
-    { name: "Notion", category: "Productivity" },
-    { name: "Linear", category: "Project Management" },
-    { name: "Vercel", category: "Deployment" },
-    { name: "Supabase", category: "Backend" },
-    { name: "Framer", category: "Prototyping" }
+    // { name: "Docker", category: "DevOps" },
+    // { name: "Notion", category: "Productivity" },
+    // { name: "Linear", category: "Project Management" },
+    // { name: "Vercel", category: "Deployment" },
+    // { name: "Supabase", category: "Backend" },
+    // { name: "Framer", category: "Prototyping" }
   ];
 
-  const achievements = [
-    { number: "50+", label: "Projects Delivered", icon: <Rocket className="text-pink-400" size={20} /> },
-    { number: "3+", label: "Years Experience", icon: <Zap className="text-magenta-400" size={20} /> },
-    { number: "25+", label: "Technologies", icon: <Code2 className="text-pink-400" size={20} /> },
-    { number: "∞", label: "Learning Curve", icon: <Brain className="text-magenta-400" size={20} /> }
-  ];
+  // const achievements = [
+  //   { number: "50+", label: "Projects Delivered", icon: <Rocket className="text-pink-400" size={20} /> },
+  //   { number: "3+", label: "Years Experience", icon: <Zap className="text-magenta-400" size={20} /> },
+  //   { number: "25+", label: "Technologies", icon: <Code2 className="text-pink-400" size={20} /> },
+  //   { number: "∞", label: "Learning Curve", icon: <Brain className="text-magenta-400" size={20} /> }
+  // ];
 
   return (
     <section id="skills" ref={sectionRef} className="py-20 bg-black relative overflow-hidden">
@@ -114,19 +107,16 @@ const Skills: React.FC = () => {
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
-          <h2 className={`text-6xl md:text-7xl font-black mb-6 transition-all duration-1000 ${
-            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-          }`}>
+          <h2 className={`text-6xl md:text-7xl font-black mb-6 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+            }`}>
             <span className="bg-gradient-to-r from-pink-400 via-magenta-500 to-pink-600 bg-clip-text text-transparent">
               MY ARSENAL
             </span>
           </h2>
-          <div className={`w-32 h-1 bg-gradient-to-r from-pink-500 to-magenta-500 mx-auto rounded-full transition-all duration-1000 delay-300 ${
-            isVisible ? 'opacity-100 scale-x-100' : 'opacity-0 scale-x-0'
-          }`} />
-          <p className={`text-xl text-gray-300 max-w-3xl mx-auto mt-8 transition-all duration-1000 delay-500 ${
-            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'
-          }`}>
+          <div className={`w-32 h-1 bg-gradient-to-r from-pink-500 to-magenta-500 mx-auto rounded-full transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 scale-x-100' : 'opacity-0 scale-x-0'
+            }`} />
+          <p className={`text-xl text-gray-300 max-w-3xl mx-auto mt-8 transition-all duration-1000 delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'
+            }`}>
             A comprehensive toolkit for building the impossible and making it look effortless.
           </p>
         </div>
@@ -134,11 +124,10 @@ const Skills: React.FC = () => {
         {/* Skills Grid */}
         <div className="grid lg:grid-cols-2 gap-8 mb-20">
           {skillCategories.map((category, index) => (
-            <div 
+            <div
               key={index}
-              className={`group relative bg-gradient-to-br ${category.bgColor} backdrop-blur-sm p-8 rounded-3xl border border-pink-500/30 hover:border-pink-400/50 transform hover:scale-[1.02] transition-all duration-500 cursor-pointer ${
-                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-              }`}
+              className={`group relative bg-gradient-to-br ${category.bgColor} backdrop-blur-sm p-8 rounded-3xl border border-pink-500/30 hover:border-pink-400/50 transform hover:scale-[1.02] transition-all duration-500 cursor-pointer ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+                }`}
               style={{ transitionDelay: `${600 + index * 100}ms` }}
               onMouseEnter={() => setActiveCategory(index)}
               onMouseLeave={() => setActiveCategory(null)}
@@ -151,22 +140,21 @@ const Skills: React.FC = () => {
                   {category.title}
                 </h3>
               </div>
-              
+
               {/* Skills Grid */}
               <div className="grid grid-cols-2 gap-3 mb-6">
                 {category.skills.map((skill, skillIndex) => (
-                  <div 
+                  <div
                     key={skillIndex}
-                    className={`bg-black/30 backdrop-blur-sm px-3 py-2 rounded-lg text-sm font-medium text-gray-300 border border-pink-500/20 hover:border-pink-400/40 hover:text-pink-300 transition-all duration-200 ${
-                      activeCategory === index ? 'transform scale-105' : ''
-                    }`}
+                    className={`bg-black/30 backdrop-blur-sm px-3 py-2 rounded-lg text-sm font-medium text-gray-300 border border-pink-500/20 hover:border-pink-400/40 hover:text-pink-300 transition-all duration-200 ${activeCategory === index ? 'transform scale-105' : ''
+                      }`}
                     style={{ transitionDelay: `${skillIndex * 50}ms` }}
                   >
                     {skill}
                   </div>
                 ))}
               </div>
-              
+
               {/* Proficiency Bar */}
               <div className="space-y-2">
                 <div className="flex items-center justify-between">
@@ -174,9 +162,9 @@ const Skills: React.FC = () => {
                   <span className="text-lg font-bold text-pink-400">{category.level}%</span>
                 </div>
                 <div className="w-full bg-gray-800 rounded-full h-3 overflow-hidden">
-                  <div 
+                  <div
                     className={`bg-gradient-to-r ${category.color} h-3 rounded-full transition-all duration-1000 ease-out relative overflow-hidden`}
-                    style={{ 
+                    style={{
                       width: animatedLevels.includes(index) ? `${category.level}%` : '0%',
                       transitionDelay: `${800 + index * 200}ms`
                     }}
@@ -194,16 +182,15 @@ const Skills: React.FC = () => {
         </div>
 
         {/* Tools & Platforms */}
-        <div className={`mb-20 transition-all duration-1000 delay-1000 ${
-          isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-        }`}>
+        <div className={`mb-20 transition-all duration-1000 delay-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+          }`}>
           <h3 className="text-3xl font-bold text-white mb-8 text-center flex items-center justify-center gap-3">
             <Globe className="text-pink-400" size={28} />
             TOOLS & PLATFORMS
           </h3>
           <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
             {tools.map((tool, index) => (
-              <div 
+              <div
                 key={index}
                 className="group bg-gradient-to-br from-gray-800/30 to-gray-900/30 backdrop-blur-sm p-4 rounded-2xl border border-pink-500/20 hover:border-pink-400/40 transform hover:scale-105 transition-all duration-300 text-center"
                 style={{ transitionDelay: `${index * 50}ms` }}
@@ -220,7 +207,7 @@ const Skills: React.FC = () => {
         </div>
 
         {/* Achievements */}
-        <div className={`grid grid-cols-2 md:grid-cols-4 gap-8 transition-all duration-1000 delay-1200 ${
+        {/* <div className={`grid grid-cols-2 md:grid-cols-4 gap-8 transition-all duration-1000 delay-1200 ${
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
         }`}>
           {achievements.map((achievement, index) => (
@@ -240,7 +227,7 @@ const Skills: React.FC = () => {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );

@@ -7,7 +7,7 @@ const Hero: React.FC = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   
-  const texts = ['FULL-STACK WEB DEVELOPER', 'CREATIVE CODER', 'PROBLEM SOLVER'];
+  const texts = ['WEB DEVELOPER', 'CREATIVE CODER', 'PROBLEM SOLVER'];
   
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
@@ -119,7 +119,7 @@ const Hero: React.FC = () => {
           
           <div className="h-20 flex items-center justify-center">
             <h2 className="text-2xl md:text-4xl font-bold text-pink-400 font-mono">
-              {currentText} 
+              {currentText}
               <span className="animate-pulse">|</span>
             </h2>
           </div>
