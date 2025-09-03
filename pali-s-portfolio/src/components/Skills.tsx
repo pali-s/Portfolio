@@ -44,7 +44,7 @@ const Skills: React.FC = () => {
     {
       icon: <Database className="text-magenta-400" size={32} />,
       title: "Backend Architecture",
-      skills: ["Node.js", "Python", "Go", "PostgreSQL", "MongoDB", "GraphQL"],
+      skills: ["Node.js","PostgreSQL", "MongoDB"],
       level: 70,
       color: "from-magenta-500 to-purple-500",
       bgColor: "from-magenta-500/10 to-purple-500/10"
