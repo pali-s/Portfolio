@@ -195,7 +195,7 @@ const Contact: React.FC = () => {
                     </div>
                     <div>
                       <div className="font-semibold">{social.name}</div>
-                      <div className="text-xs text-gray-500">{social.followers}</div>
+                      {/* <div className="text-xs text-gray-500">{social.followers}</div> */}
                     </div>
                   </a>
                 ))}

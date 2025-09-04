@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
           <div className="flex items-center justify-center gap-3 mb-6">
             <Code className="text-pink-400" size={32} />
             <h3 className="text-3xl font-black bg-gradient-to-r from-pink-400 via-magenta-500 to-pink-600 bg-clip-text text-transparent">
-              DEV.SPACE
+              PALI-S
             </h3>
             <Zap className="text-magenta-400" size={32} />
           </div>
@@ -37,11 +37,11 @@ const Footer: React.FC = () => {
 
           {/* Call to Action */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <button className="group bg-gradient-to-r from-pink-500 via-magenta-500 to-pink-600 text-white px-8 py-3 rounded-full font-bold hover:shadow-2xl hover:shadow-pink-500/50 transform hover:scale-105 transition-all duration-300 flex items-center gap-3">
+            {/* <button className="group bg-gradient-to-r from-pink-500 via-magenta-500 to-pink-600 text-white px-8 py-3 rounded-full font-bold hover:shadow-2xl hover:shadow-pink-500/50 transform hover:scale-105 transition-all duration-300 flex items-center gap-3">
               <Coffee size={20} />
               Let's Collaborate
               <ArrowUp size={16} className="group-hover:-translate-y-1 transition-transform duration-200" />
-            </button>
+            </button> */}
             
             <div className="flex items-center gap-2 text-gray-400">
               <span>Available for</span>
@@ -61,12 +61,12 @@ const Footer: React.FC = () => {
               <Coffee className="text-magenta-400" size={16} />
               <span className="text-gray-400">by</span>
               <span className="font-bold bg-gradient-to-r from-pink-400 to-magenta-400 bg-clip-text text-transparent">
-                Creative Developer
+                Palishma Shakya
               </span>
             </div>
             
             <div className="text-gray-500 text-sm">
-              © {currentYear} DEV.SPACE. All rights reserved. Built with React & TypeScript.
+              © {currentYear} Built with React & TypeScript.
             </div>
           </div>
         </div>
